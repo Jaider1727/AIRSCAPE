@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-container: 50px 0;
+    --color-title:#0001;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    color: #fff;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    background-color:#0B2447;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav__title{
+    font-weight: 200;
+}
+.nav__link{
+    max-width: 800px;
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;  
+    text-align: center;
+}
+.nav__items{
+    list-style: none;
+    align-items: center;
+}
+.nav__links{
+    color:#fff;
+    text-decoration: none;
+}
+.hero__title{
+    color:rgb(255, 255, 255);
+}
+.hero__container{
+    max-width: 100%;
+    font-size: 15px;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: start;
+    gap:1em;
+    padding-bottom: 100px;
+    text-align: center;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.247);
+    list-style: none;
+}
+.hero__container{
+    max-width: 100%;
+    max-height: 80%;
+    background-image: url(../img/ciudad.jpg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.cta{
+    display: inline-block;
+    background-color: #0B2447;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    flex-direction: row-reverse;
+    text-shadow: none;
+
+}
+.bloque__container{
+    float: center;
+    background-color: rgba(255, 255, 255, 0.611);
+    width: 800px;
+    height: 400px;
+    position: fixed ;
+    left: 370px;
+    top: 500px;
+}
+.bloque2__container{
+    float: center;
+    background-color: rgb(255, 255, 255);
+    width: 780px;
+    height: 380px;
+    position: fixed ;
+    left: 380px;
+    top: 510px;
+}
+.general__link{
+    max-width: 800px;
+    margin-left: auto;
+    padding: 8px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;  
+    text-align: center;
+}
+.general__items{
+    list-style: none;
+    align-items: center;
+}
+.general__links{
+    text-decoration: none;
+    font-size: 20px;
+}
+
